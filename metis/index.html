@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+
+section {
+  background: #000;
+  color: #fff;
+  padding: 2em;
+  font-family: "PT Serif", Baskerville, Georgia;
+}
+
+#follow {
+  background: none;
+}
+
+.grey {
+  color: #777;
+}
+
+a:link,
+a:visited {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+em {
+  color: orange;
+}
+
+</style>
+
+<section style="text-align:center;padding-top:5em;">
+
+  <p style="font-size:120%;"><b>Data visualization</b> and <b>D3</b></p>
+  <p class="grey">Joys and headaches.
+
+</section>
+
+<section style="padding:5em 9em;">
+    
+  <p> The New York Times graphics department is “a <a href="http://www.nytimes.com/2008/02/25/business/media/25asktheeditors.html?pagewanted=all">group</a> of <span class="strikethrough">30</span> 44 journalists who research and create the diagrams, maps and charts for the newspaper and the Web site.”</p>
+</section>
+
+<section style="text-align:center;padding-top:5em;">
+  <a href="http://www.nytimes.com/interactive/2012/08/05/sports/olympics/the-100-meter-dash-one-race-every-medalist-ever.html">One Race, Every Medalist Ever</a> and <a href="view-source:http://www.nytimes.com/interactive/2012/08/05/sports/olympics/the-100-meter-dash-one-race-every-medalist-ever.html">Source</a>, which <a href="http://alignedleft.com/tutorials/d3/making-a-scatterplot">looks familiar</a>
+</section>
+
+
+
+<section style="text-align:center;font-size:300%;">
+  Why visualize data?
+</section>
+
+<section>
+  <p>“Total strikeouts in the major leagues have risen in each of the last seven seasons, peaking — so far — at 36,426 last year to establish a record, according to the Elias Sports Bureau. Eighteen teams struck out at least 1,200 times last season; through 2005, there had never been a season in which more than two teams topped that total.” -<a href="http://www.nytimes.com/2013/03/31/sports/baseball/swing-and-a-mystery-why-strikeout-rates-are-soaring.html">NYT</a> </p>
+  <br><br>
+  <p>What's next? <a class="small" href="http://shancarter.github.io/ucb-dataviz-fall-2013/classes/thinking-critically-with-data/strikeouts.csv">Source</a> </p>
+</section>
+
+<section>
+  <img style="width:60%;" src="Screenshot 2015-04-21 09.05.57.png">
+  <p>Excel</p>
+</section>
+
+<section>
+  <img style="width: 60%;" src="Screenshot 2015-04-21 09.07.53.png">
+  <p>R</p>
+</section>
+
+<section>
+  <img src="pkg-pkg_chartbuilder.png"</section>
+  <p><a href="http://quartz.github.io/Chartbuilder/">Chartbuilder</a></p>
+</section>
+
+<section>
+  <p>D3</p>
+  <img style="width:60%;" src="Screenshot 2015-04-21 09.45.31.png">
+</section>
+
+<section>
+  <p>(And <a href="view-source:http://localhost:8000/scatterblamo.html">by the way</a>.)
+</section>
+
+<section>
+  <p>Good ideas don't need to be flashy. Just ask <a href="http://krugman.blogs.nytimes.com/2015/04/10/the-laffer-swerve/?module=BlogPost-Title&version=Blog%20Main&contentCollection=Opinion&action=Click&pgtype=Blogs&region=Body">Paul Krugman</a>.</p>  
+  <img src="http://graphics8.nytimes.com/images/2015/04/10/opinion/041015krugman1/041015krugman1-tmagArticle.png">
+</section>
+
+<section>
+  <p>Try <a href="scatterblamo.html">doing this</a> in Excel, though.</p>
+</section>
+
+<section style="padding:5em 9em;">
+  <p>But this is not data visualization with D3.</p>
+  <img style="width: 100%;" src="http://28.media.tumblr.com/tumblr_lmg4t59VZQ1qzekdio1_500.gif">
+</section>
+
+<section style="text-align:center;font-size:300%;">
+  Why use D3 at all?
+</section>
+
+<section>
+  “I deeply regret learning all that Javascript.” -No one
+</section>
+
+<section>
+  Use D3 to communicate more effectively; use technology to <em>solve a problem</em>, <em>customize an experience</em> or <em>scale an idea</em>. 
+</section>
+
+<section>
+  <p><a href="http://www.nytimes.com/interactive/2013/03/29/sports/baseball/Strikeouts-Are-Still-Soaring.html">Strikeouts on the Rise</a></p>
+  <p><a href="http://www.nytimes.com/interactive/2014/12/19/upshot/nfl-playoff-simulator.html">NFL Simulator</a></p>
+  <p><a href="http://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html">Is It Better to Buy Or Rent?</a></p>
+  <p><a href="http://www.nytimes.com/2014/08/16/upshot/mapping-migration-in-the-united-states-since-1900.html">Migrations</a></p>
+  <p><a href="http://www.nytimes.com/2014/05/02/upshot/how-not-to-be-misled-by-the-jobs-report.html?abt=0002&abg=0">How Not to be Misled by the Jobs Report</a></p>
+  <p><a href="http://bl.ocks.org/mbostock/57809fa8887dd73c0ac5">Or art projects.</a></p>
+</section>
+
+<section style="padding:5em 13em;">
+<p>Thanks!</p>
+</section>
+
+<script src="http://mbostock.github.io/stack/d3.v3.min.js"></script>
+<script src="http://mbostock.github.io/stack/stack.v1.min.js"></script>
+<script>
+
+var mystack = stack()
+    .on("activate", activate)
+    .on("deactivate", deactivate);
+
+var section = d3.selectAll("section"),
+    follow = d3.select("#follow"),
+    followAnchor = d3.select("#follow-anchor"),
+    lorenz = d3.select("#lorenz"),
+    followIndex = section[0].indexOf(follow.node()),
+    lorenzIndex = section[0].indexOf(lorenz.node());
+
+function refollow() {
+  followAnchor.style("top", (followIndex + (1 - mystack.scrollRatio()) / 2 - d3.event.offset) * 100 + "%");
+}
+
+function activate(d, i) {
+  if (i === followIndex) mystack.on("scroll.follow", refollow);
+  if (i === lorenzIndex) startLorenz();
+}
+
+function deactivate(d, i) {
+  if (i === followIndex) mystack.on("scroll.follow", null);
+  if (i === lorenzIndex) stopLorenz();
+}
+
+var lorenzInterval;
+
+function startLorenz() {
+  var δτ = 0.003,
+      ρ = 28,
+      σ = 10,
+      β = 8 / 3,
+      x = .5,
+      y = .5,
+      z = 10,
+      n = 30;
+
+  var width = 1280,
+      height = 720;
+
+  var canvas = d3.select("canvas")
+      .style("position", "absolute")
+      .style("top", 0)
+      .style("left", 0)
+      .style("width", "100%")
+      .style("height", "100%")
+      .attr("width", width)
+      .attr("height", height);
+
+  var color = d3.scale.linear()
+      .domain([0, 20, 30, 50])
+      .range(["yellow", "orange", "brown", "purple"])
+      .interpolate(d3.interpolateHcl);
+
+  var context = canvas.node().getContext("2d");
+
+  context.lineWidth = .2;
+  context.fillStyle = "rgba(0,0,0,.03)";
+
+  d3.timer(function() {
+    context.save();
+    context.globalCompositeOperation = "lighter";
+    context.translate(width / 2, height / 2);
+    context.scale(12, 14);
+    context.rotate(30);
+    for (var i = 0; i < n; ++i) {
+      context.strokeStyle = color(z);
+      context.beginPath();
+      context.moveTo(x, y);
+      x += δτ * σ * (y - x);
+      y += δτ * (x * (ρ - z) - y);
+      z += δτ * (x * y - β * z);
+      context.lineTo(x, y);
+      context.stroke();
+    }
+    context.restore();
+    return !lorenzInterval;
+  });
+
+  lorenzInterval = setInterval(function() {
+    context.fillRect(0, 0, width, height);
+  }, 100);
+}
+
+function stopLorenz() {
+  lorenzInterval = clearInterval(lorenzInterval);
+}
+
+</script>
